@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Huynh Poster</title>
+        <!-- Font Awesome cnd link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS link -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pro-details.css">
+        <!-- jQuery link -->
+        <script src="jquery-3.6.0.min.js"></script>
+        <!-- Title icon -->
+        <link rel="shortcut icon" href="img/logo-icon.png">
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div id="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div id="search-box">
+                    <div id="search">
+                        <input type="text" placeholder="Bạn cần tìm Poster gì?">
+                        <button id="search-box-icon" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="user">
+                    <a href="signin-up.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="signin-up.html">Đăng Nhập</a>
+                    <span style="color: #fff"> | </span>
+                    <a href="signin-up.html">Đăng Ký</a>
+                </div>
+
+                <div id="cart">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span id="amount">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- Chi tiết sản phẩm -->
+        <div class="container">
+            <div class="box-product">
+                <div class="header">
+                    <span>Chi tiết sản phẩm</span>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="product-img">
+                            <img src="img/8.jpg" alt="">
+                        </div>
+                        <div class="product-view">
+                            <div id="img1"><img src="img/8.jpg" alt=""></div>
+                            <div id="img2"><img src="img/8.1.jpg" alt=""></div>
+                            <div id="img3"><img src="img/8.2.jpg" alt=""></div>
+                            <div id="img4"><img src="img/8.3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <span class="price">Giá:
+                            <strong class="price-discount">105.000₫</strong>
+                            <span class="price-original">150.000₫</span>
+                        </span>    
+                        <div class="detail">
+                            <span>Chọn size: <strong id="display-size">21x30 cm</strong></span>
+                            <input class="size s" type="button" value="21x30 cm"></input>
+                            <input class="size m" type="button" value="30x40 cm"></input>
+                            <input class="size l" type="button" value="50x70 cm"></input>
+                        </div>
+                        <div class="quantity">
+                            <span>Số lượng:</span>
+                            <button class="btn-minus" type="button"><i class="fa-solid fa-minus"></i></button>
+                            <input class="txt-amount" type="text" value="1">
+                            <button class="btn-plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div class="btn-buy">
+                            <button id="addToCart" class="btn" type="button">thêm vào giỏ hàng</button>
+                            <button class="btn" type="button">mua ngay</button>    
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- Thông tin sản phẩm -->
+        <div class="container">
+            <div class="header">
+                <span>Thông tin sản phẩm</span>
+            </div>
+            <table>
+                <tr>
+                    <td class="col-1">Danh mục</td>
+                    <td><a href="index.html">Huynh Poster</a> > Anime</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Kho hàng</td>
+                    <td class="col-2">7373231</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Xuất xứ</td>
+                    <td>Việt Nam</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Gửi từ</td>
+                    <td class="col-2">Hà Nội</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Chất liệu</td>
+                    <td>Giấy</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Mô tả -->
+        <div class="container">
+            <div class="header">
+                <span>Mô tả sản phẩm</span>
+            </div>
+            <p>
+                🔔 CÁC BẠN LƯU Ý SHOP NHẬN ĐƠN TỪ 30 tấm trở lên với ảnh A5 hoặc 20 tấm trở lên với ảnh A4 nhé!<br>
+                👉 Khách đặt đơn sau đó gửi ảnh truyện hoặc tên truyện cho shop qua zalo: 0985352231 nhé!<br>
+                👉 Khách đặt không đủ số lượng bên mình không nhận in & gửi lại giá trị sản phẩm.<br>
+                ➡️ KHÁCH ĐẶT ĐƠN NHƯNG KO GỬI ẢNH TRUYỆN HOẶC TÊN TRUYỆN YÊU CẦU CHO SHOP THÌ BÊN SHOP SẼ MIX TRUYỆN GỬI CHO CÁC BẠN NHÉ!<br>
+                📏 Kích thước giấy:<br>
+                - A5: 14,8cm x 21cm<br>
+                - A4: 21cm x 30cm<br>
+                💲 Giá bên mình giá cực kì cạnh tranh, mực UV chống phai màu.<br>
+                => IN SỐ LƯỢNG NHIỀU TRÊN SHOP CÓ COMBO SIÊU RẺ LUÔN NHÉ<br>
+                🏆 Chất liệu giấy double A cực tốt dày 80gsm<br>
+                - Có in màu cho các bạn có yêu cầu<br>
+                - Mực in trên hình cực kì đậm và sắc nét<br>
+                📱 Liên hệ zalo 0985352231  để được tư vấn nhanh nhất <br>
+                * LƯU Ý : SẢN PHẨM KHÔNG CÓ KEO SẴN & SHOP KHÔNG TẶNG KÈM KEO!!
+            </p>
+        </div>
+        <!-- corevalue -->
+        <div class="container">
+            <div class="corevalue">
+                <div class="item">
+                    <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+                    <div class="text">
+                        <span>Sản phẩm</span>
+                        <strong>CHẤT LƯỢNG</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
+                    <div class="text">
+                        <span>Thanh toán</span>
+                        <strong>AN TOÀN</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <div class="text">
+                        <span>Giao hàng nhanh chóng</span>
+                        <strong>ĐÁNG TIN CẬY</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="icon"><i class="fa-solid fa-rotate"></i></span>
+                    <div class="text">
+                        <span>Thủ tục đổi trả</span>
+                        <strong>DỄ DÀNG</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="item">
+                    <h3>Liên hệ</h3>
+                    <div class="contact">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>TT.Bần Yên Nhân, Mỹ Hào, Hưng Yên</span>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>nguyenvanhuynh@gmail.com</span>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0985.352.231</span>
+                    </div>
+                    <div class="contact-link">
+                        <a href="https://www.facebook.com/profile.php?id=100026158726680"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Hỗ trợ - Dịch vụ</h3>
+                    <div class="contact support">
+                        <a href="#"><span>Câu hỏi thường gặp</span>
+                        </a>
+                        <a href="#"><span>Mua trả góp</span></a>
+                        <a href="#"><span>Chính sách bảo mật</span></a>
+                        <a href="#"><span>Chính sách bảo hành</span></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Thanh toán miễn phí</h3>
+                    <div class="contact">
+                        <img src="img/logo-visa.png" alt="logo-visa">
+                        <img src="img/logo-master.png" alt="logo-master">
+                        <img src="img/logo-atm.png" alt="logo-atm">
+                        <img src="img/logo-jcb.png" alt="logo-jcb">
+                        <img src="img/logo-samsungpay.png" alt="logo-samsungpay">
+                        <img src="img/logo-vnpay.png" alt="logo-vnpay">
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Đăng kí nhận tin</h3>
+                    <div class="contact">
+                        <span>Đăng kí ngay để không bỏ lỡ những tin mới nhất từ Thế Giới Poster!</span>
+                        <div id="enter-email">
+                            <input type="text" placeholder="Nhập Email của bạn...">
+                            <button id="submit-email" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="footer-bottom">© 2022 - Bản quyền thuộc về Huynh Poster | Designed by: Nguyễn Văn Huynh</span>
+        </div>
+        <button id="btn-BackToTop"><i class="fas fa-angle-up" aria-hidden="true"></i></button>
+
+        <script>
+            $(document).ready(function(){
+                //Chọn Size
+                $(".s").click(function(){
+                    $("#display-size").text("21x30 cm");
+                });
+                $(".m").click(function(){
+                    $("#display-size").text("30x40 cm");
+                });
+                $(".l").click(function(){
+                    $("#display-size").text("50x70 cm");
+                });
+                //Xem trước
+                $("#img1").click(function(){
+                    $(".product-img img").attr("src", "img/8.jpg");
+                });
+                $("#img2").click(function(){
+                    $(".product-img img").attr("src", "img/8.1.jpg");
+                });
+                $("#img3").click(function(){
+                    $(".product-img img").attr("src", "img/8.2.jpg");
+                });
+                $("#img4").click(function(){
+                    $(".product-img img").attr("src", "img/8.3.jpg");
+                });
+                //Selected-size
+                $(".size").click(function(){
+                    $(".size").removeClass("selected-size");
+                    $(this).addClass("selected-size");
+                });
+            });
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huynh Poster</title>
+    <!-- Font Awesome cnd link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- jQuery link -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- Title icon -->
+    <link rel="shortcut icon" href="img/logo-icon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div id="search-box">
+                <div id="search">
+                    <input type="text" placeholder="Bạn cần tìm Poster gì?">
+                    <button id="search-box-icon" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="user">
+                <a href="signin-up.html"><i class="fa-solid fa-user"></i></a>
+                <a href="signin-up.html">Đăng Nhập</a>
+                <span style="color: #fff"> | </span>
+                <a href="signin-up.html">Đăng Ký</a>
+            </div>
+
+            <div id="cart">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="amount">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Giỏ hàng -->
+    <div class="container">
+        <div class="content cart-content">
+            <div id="left-content">
+                <h2>giỏ hàng</h2>
+                <!-- <div id="cart-products"></div> -->
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" class="check-box"></th>
+                            <th>ẢNH SẢN PHẨM</th>
+                            <th>TÊN SẢN PHẨM</th>
+                            <th>ĐƠN GIÁ</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>TẠM TÍNH</th>
+                            <th>XÓA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listProducts"></tbody>
+                </table>
+            </div>
+            <div id="right-content">
+                <div id="delivery-to">
+                    <h3>Giao hàng tới</h3>
+                    <strong><i class="fa-solid fa-user-tag"></i> Nguyễn Văn Huynh | 0985.352.231</strong>
+                    <span><i class="fa-solid fa-location-dot"></i> Bưu điện Đại Hưng, Khoái Châu, Hưng Yên</span>
+                </div>
+                <div id="coupon">
+                    <i class="fa-solid fa-tags"></i>
+                    <strong>Thông tin khuyến mại</strong>
+                    <input type="text" placeholder="Nhập mã giảm giá...">
+                </div>
+                <div id="payment">
+                    <p>
+                        <span>Tạm tính: </span><span class="price">231.500₫</span>
+                    </p>
+                    <p>
+                        <span>Giảm giá: </span><span class="price">-15.000₫</span>
+                    </p>
+                    <p>
+                        <strong>Tổng cộng: </strong><span class="price">216.500₫</span>
+                    </p>
+                </div>
+                <div id="process">
+                    <input type="button" value="Thanh Toán">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Core value -->
+    <div class="container">
+        <div class="corevalue">
+            <div class="item">
+                <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+                <div class="text">
+                    <span>Sản phẩm</span>
+                    <strong>CHẤT LƯỢNG</strong>
+                </div>
+            </div>
+            <div class="item">
+                <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <div class="text">
+                    <span>Thanh toán</span>
+                    <strong>AN TOÀN</strong>
+                </div>
+            </div>
+            <div class="item">
+                <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
+                <div class="text">
+                    <span>Giao hàng nhanh chóng</span>
+                    <strong>ĐÁNG TIN CẬY</strong>
+                </div>
+            </div>
+            <div class="item">
+                <span class="icon"><i class="fa-solid fa-rotate"></i></span>
+                <div class="text">
+                    <span>Thủ tục đổi trả</span>
+                    <strong>DỄ DÀNG</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="item">
+                <h3>Liên hệ</h3>
+                <div class="contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>TT.Bần Yên Nhân, Mỹ Hào, Hưng Yên</span>
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>nguyenvanhuynh@gmail.com</span>
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0985.352.231</span>
+                </div>
+                <div class="contact-link">
+                    <a href="https://www.facebook.com/profile.php?id=100026158726680"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>Hỗ trợ - Dịch vụ</h3>
+                <div class="contact support">
+                    <a href="#"><span>Câu hỏi thường gặp</span>
+                    </a>
+                    <a href="#"><span>Mua trả góp</span></a>
+                    <a href="#"><span>Chính sách bảo mật</span></a>
+                    <a href="#"><span>Chính sách bảo hành</span></a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>Thanh toán miễn phí</h3>
+                <div class="contact">
+                    <img src="img/logo-visa.png" alt="logo-visa">
+                    <img src="img/logo-master.png" alt="logo-master">
+                    <img src="img/logo-atm.png" alt="logo-atm">
+                    <img src="img/logo-jcb.png" alt="logo-jcb">
+                    <img src="img/logo-samsungpay.png" alt="logo-samsungpay">
+                    <img src="img/logo-vnpay.png" alt="logo-vnpay">
+                </div>
+            </div>
+            <div class="item">
+                <h3>Đăng kí nhận tin</h3>
+                <div class="contact">
+                    <span>Đăng kí ngay để không bỏ lỡ những tin mới nhất từ Thế Giới Poster!</span>
+                    <div id="enter-email">
+                        <input type="text" placeholder="Nhập Email của bạn...">
+                        <button id="submit-email" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="footer-bottom">© 2022 - Bản quyền thuộc về Huynh Poster | Designed by: Nguyễn Văn Huynh</span>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var cart = sessionStorage.getItem("cart");
+            cartProducts = "["+cart+"]";
+            products = JSON.parse(cartProducts);
+            var amount = products.length;
+            $("#amount").text(amount);
+
+            var row = "";
+            for (var i=0; i<amount; i++){
+                row += `
+                    <tr>
+                        <td><input type="checkbox" class="check-box"></td>
+                        <td><img src="${products[i].img}"></td>
+                        <td>${products[i].name}</td>
+                        <td>${products[i].price}</td>
+                        <td>
+                            <button class="btn-minus" type="button"><i class="fa-solid fa-minus"></i></button>
+                            <input class="txt-amount" type="text" value="${products[i].quantity}" readonly>
+                            <button class="btn-plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </td>
+                        <td>${products[i].price}</td>
+                        <td><i class="fa-solid fa-trash-can"></i></td>
+                    </tr>
+                `;
+            }
+            document.getElementById("listProducts").innerHTML = row;
+
+            $(".btn-plus").click(function(){
+                //Tăng số lượng phần tử
+                var amount = $(this).prev().attr("value");
+                var a = Number(amount) + 1;
+                $(this).prev().attr("value",a);
+
+                //Lấy giá
+                var price = $(this).parent().prev().text();
+                price = price.replace("₫","");
+                price = price.replace(".","");
+                var p = Number(price);
+
+                //Thành tiền
+                var total = a*p;
+                var total2 = "";
+                if(total>1000000){
+                    var p1 = parseInt(total/1000000);
+                    var p2 = (total-p1*1000000)/1000;
+                    if(p2 >= 100)
+                        total2 = p1+"."+p2+".000";
+                    else if(p2 > 0)
+                        total2 = p1+".0"+p2+".000";
+                    else
+                        total2 = p1+".000.000";
+                }
+                else{
+                    var p1 = total/1000;
+                    total2 = p1+".000";
+                }
+                //Truy suất và gán vào ô thành tiền
+                $(this).parent().next().text(total2+"₫");
+            });
+
+            $(".btn-minus").click(function(){
+                //Giảm số lượng phần tử
+                var amount = $(this).next().attr("value");
+                var a = 1;
+                if(Number(amount) > 1)
+                    a = Number(amount) - 1;
+                $(this).next().attr("value",a); // gán số lượng
+
+                //Lấy giá
+                var price = $(this).parent().prev().text();
+                price = price.replace("₫","");
+                price = price.replace(".","");
+                var p = Number(price);
+
+                //Thành tiền
+                var total = a*p;
+                var total2 = "";
+                if(total>1000000){
+                    var p1 = parseInt(total/1000000);
+                    var p2 = (total-p1*1000000)/1000;
+                    if(p2 >= 100)
+                        total2 = p1+"."+p2+".000";
+                    else if(p2 > 0)
+                        total2 = p1+".0"+p2+".000";
+                    else
+                        total2 = p1+".000.000";
+                }
+                else{
+                    var p1 = total/1000;
+                    total2 = p1+".000";
+                }
+                //Truy suất và gán vào ô thành tiền
+                $(this).parent().next().text(total2+"₫");
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>

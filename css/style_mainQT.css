@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/* *:focus {
+    outline: none;
+} */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B2C34;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 5px 10px 0px #eee;
+}
+#logo{
+    width: 160px;
+    height: 60px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header .box-login {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    border-left: 1px solid #fff;
+    width: 140px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+#box-t:hover #box-b {
+    opacity: 1;
+    visibility: visible;
+}
+.header .box-login .box-login-bottom {
+    height: auto;
+    width: auto;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+}
+.header .box-login .box-login-bottom button {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    background-color: #2B2C34;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+.header .box-login .box-login-bottom button:hover {
+    background-color: #4D9797;
+}
+#box-t:hover #box-b {
+    display: block;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.main .category{
+    width: 15%;
+    margin-right: 30px;
+}
+.main .content{
+    width: 85%;
+}
+.main .category button {
+    display: block;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 20px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+.main .category button:hover {
+    background-color: #ddd;
+    border-right: 3px solid #4D9797;
+}
+
+.main .category button.active {
+    background-color: #ccc;
+    border-right: 3px solid #4D9797;
+}
+
+.main .tabcontent {
+    padding: 15px 10px 10px;
+}
+
+.main .content .tabcontent .title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #4D9797;
+    margin-bottom: 20px;
+}
+
+.main .content .tabcontent .padding-box {
+    padding: 10px 8px 0px 8px;
+}
+.main .content .tabcontent .row {
+    display: flex;
+    justify-content: space-between;
+}
+.main .content .tabcontent .padding-box input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.main .content .tabcontent .padding-box button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #00a2ff;
+    color: white;
+}
+
+.main .content .tabcontent .padding-box button:hover {
+    background-color: #295a77;
+}
+
+.main .content .tabcontent .padding-box table {
+    width: 100%;
+}
+
+.main .content .tabcontent .padding-box table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.main .content .tabcontent .padding-box table input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.main .content .tabcontent .padding-box table th, td {
+    padding: 5px 10px;
+}
+
+.main .content .tabcontent .padding-box td i {
+    cursor: pointer;
+    margin: 3px;
+    color: #0072b4;
+}
+
+.main .content .tabcontent .padding-box td i:hover {
+    color: orangered;
+}
+
+.main .content .tabcontent .padding-box table img {
+    width: 70px;
+    height: 70px;
+}
+
+.main .content .tabcontent .padding-box textarea {
+    max-width: 100%;
+    min-width: 30%;
+    min-height: 60px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main .content .tabcontent hr {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin: 20px 0px 15px 0px;
+}
+
+.main .content .tabcontent .btn-form {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.main .content .tabcontent .btn-form:hover {
+    opacity: 1;
+}
+
+.main .content .tabcontent .padding-box .box-sum {
+    width: 100%;
+    height: 65px;
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    padding: 10px;
+}
+
+.main .content .tabcontent .padding-box .box-sum .box-left {
+    font-size: 16px;
+    float: left;
+}
+
+.main .content .tabcontent .padding-box .box-sum .box-left span {
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main .content .tabcontent .padding-box .box-sum .box-right {
+    float: right;
+    margin-top: 9px;
+}
+
+.main .content .tabcontent .padding-box .box-sum .box-right button {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 14px;
+    border: none;
+}
+
+.main .content .tabcontent .padding-box .box-sum .box-right button:hover {
+    background-color: #0483cc;
+}
+
+.main .content .tabcontent .table_chitiet {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.main .content .tabcontent .table_chitiet th, .table_chitiet td {
+    border: none;
+}
+
+.main .content .tabcontent .box {
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main .content .tabcontent .box .box-left {
+    font-size: 22px;
+    /* float: left; */
+    padding: 30px 0 30px 60px;
+}
+
+.main .content .tabcontent .box .box-right {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 30px 60px 30px 20px;
+}
+
+.main .content .tabcontent .box2 {
+    border-radius: 5px;
+    width: 380px;
+    height: 180px;
+    margin-top: 15px;
+}
+
+.main .content .tabcontent .box2 .box2-top {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main .content .tabcontent .box2 .box2-bot {
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+.main .content .tabcontent .box2 .box2-bot .box2-bot-left {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.main .content .tabcontent .box2 .box2-bot .box2-bot-right {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: right;
+    text-decoration: underline;
+}
